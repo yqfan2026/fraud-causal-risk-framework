@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+
+# Raw and processed data
+data/*
+!data/README.md
+
+outputs/*
+!outputs/README.md
+
+# Large generated artifacts
+*.pkl
+*.npy
+*.npz
+*.parquet
+*.feather
+*.joblib
+*.model
+
+# Local environment
+.env
+.venv/
+venv/
+.DS_Store
+.vscode/
+.idea/
