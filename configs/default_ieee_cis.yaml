@@ -1,0 +1,21 @@
+dataset: ieee_cis_fraud_detection
+random_seed: 42
+preprocessing:
+  miss_thresh: 0.99
+causal_features:
+  half_life_days: 7
+  smooth_strength: 10
+model:
+  algorithm: LightGBM
+  n_splits: 5
+  cv_mode: group
+  calibration: platt
+  target_fpr: 0.01
+  n_estimators: 5000
+  learning_rate: 0.02
+  num_leaves: 256
+  min_child_samples: 40
+  subsample: 0.8
+  colsample_bytree: 0.8
+  reg_lambda: 1.0
+  early_stopping_rounds: 200
